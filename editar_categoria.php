@@ -13,8 +13,8 @@ if (isset($_GET["id"])) {
 
   $resposta = $conexao->query($sql);
 
-  if ($resposta->num_rows > 0) {
-    $linha = $resposta->fetch_assoc();
+  if ($resposta) {
+    $linha = $resposta->fetch(PDO::FETCH_ASSOC);
 
     $nome = $linha["CATEGORIA_NOME"];
     $descricao = $linha["CATEGORIA_DESC"];

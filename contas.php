@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-12 text-right">
             <div class="adicionar">
-              <a href="criar_categoria.php" class="link">+ Novo Evento</a>
+              <a href="#" class="link">+ Nova Conta</a>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title"> Bravo4Fun - Categorias </h4>
+                <h4 class="card-title"> Bravo4Fun - Contas: </h4>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
@@ -38,7 +38,7 @@
                     <thead class=" text-primary">
                       <tr>
                         <th>
-                          Categoria:
+                          Conta:
                         </th>
                         <th class="text-right">
                           Editar
@@ -46,37 +46,22 @@
                       </tr>
                     </thead>
                     <tbody>
-
-                      <?php
-                      //CHAMADA DA CONEXÃO COM O BANCO DE DADOS::
-
-                      include('processamento/conexao.php');
-
-                      //BUSCAR DA TABELA CATEGORIA, ID E NOME DA CATEGORIA.
-
-                      $sql = 'SELECT CATEGORIA_ID, CATEGORIA_NOME FROM CATEGORIA';
-
-                      //QUERY :: pedido, o que foi pedido irá retornar na variavel criada ($resposta), $resposta se torna os dados do pedido
-
-                      $resposta = $conexao->query($sql);
-                      
-                      /*
-                      FECTH_ARRAY = significa que vai receber as infos em forma de arrar, e
-                      MYSQLI_ASSOC = associaçao por palavra, ou seja vai buscar a palavra que eu digitar
-                      */
-                      
-                      /*
-                      enquanto existir uma linha execute o comando,
-                      criar linha na tabela e inserir em cada linha nome categoria e id
-                      */
-            
-                      while ($linha = $resposta->fetch(PDO::FETCH_ASSOC)) {
-                        echo " <tr>
-                        <td> {$linha['CATEGORIA_NOME']}  </td> 
-                        <td class='text-right'><a href='editar_categoria.php?id={$linha['CATEGORIA_ID']}'>Editar</a></td>
-                        </tr>";
-                      }
-                      ?>
+                      <tr>
+                        <td>
+                          Conta 1
+                        </td>
+                        <td class="text-right">
+                          Editar
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Conta 2
+                        </td>
+                        <td class="text-right">
+                          Editar
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
