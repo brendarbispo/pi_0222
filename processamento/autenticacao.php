@@ -17,11 +17,9 @@ $senha = $_POST['senha'];
 
 //buscar email e senha da tabela administrador enqanto email for igual::
 
-$res = $conexao->query("SELECT ADM_EMAIL, ADM_SENHA FROM ADMINISTRADOR WHERE ADM_EMAIL = '" .  $email . "'");
+$admin = $conexao->query("SELECT ADM_EMAIL, ADM_SENHA FROM ADMINISTRADOR WHERE ADM_EMAIL = '" .  $email . "'")->fetch(PDO::FETCH_ASSOC);
 
-if ($res) {
-
-    $admin = $res->fetch(PDO::FETCH_ASSOC);
+if ($admin) {
 
     $senha_db = $admin['ADM_SENHA'];
 
