@@ -3,7 +3,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Bravo - Admin</title>
+  <title>Bravo4Fun - Admin</title>
 
   <!-- Adicionando head ao documento -->
   <?php include("layout/head.php") ?>
@@ -24,7 +24,7 @@
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header ">
-                <h4 class="card-title">Criar Categoria: </h4>
+                <h4 class="card-title">Criar conta: </h4>
               </div>
               <form method="post" action="processamento/categoria_sql.php" id="salvar" class="form-horizontal" novalidate="novalidate">
                 <input type="hidden" name="acao" value="criar" />

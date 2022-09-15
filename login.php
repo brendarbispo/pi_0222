@@ -19,22 +19,24 @@
               <div class="card-header">
                 <h4>Bravo4Fun Login:</h4>
               </div>
+
               <div class="card-body">
                 <div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
-                  </div>
-                  <div class="form-group">
-                    <div class="d-block">
-                      <label for="senha" class="control-label">Senha</label>
+                  <form action="autenticacao.php" method="post">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
                     </div>
-                    <input id="senha" type="password" class="form-control" name="password" tabindex="2" required>
-                  </div>
-                  <div class="form-group">
-                    <button type="submit" id="entrar" class="btn btn-primary btn-lg btn-block"
-                      tabindex="4">Entrar</button>
-                  </div>
+                    <div class="form-group">
+                      <div class="d-block">
+                        <label for="senha" class="control-label">Senha</label>
+                      </div>
+                      <input id="senha" type="password" class="form-control" name="password" tabindex="2" required>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" id="entrar" class="btn btn-primary btn-lg btn-block" tabindex="4">Entrar</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>

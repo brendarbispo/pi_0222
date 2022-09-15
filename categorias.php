@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Bravo - Categorias</title>
+  <title> Bravo4Fun - Categorias</title>
 
   <!-- Adicionando head ao documento -->
   <?php include("layout/head.php") ?>
@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-12 text-right">
             <div class="adicionar">
-              <a href="criar_categoria.php" class="link">+ Novo Evento</a>
+              <a href="criar_categoria.php" class="link">+ Nova Categoria</a>
             </div>
           </div>
         </div>

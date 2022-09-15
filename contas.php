@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-  <title>Bravo - Categorias</title>
+  <title>Bravo4Fun - Contas</title>
 
   <!-- Adicionando head ao documento -->
   <?php include("layout/head.php") ?>
